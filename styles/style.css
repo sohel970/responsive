@@ -67,4 +67,7 @@
     .con{
         grid-template-columns: repeat(2, 1fr);
     }
+    .food{
+        background-color: chartreuse;
+    }
 }
