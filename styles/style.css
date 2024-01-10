@@ -1,14 +1,70 @@
-.container{
+.container {
     border: 2px solid rgb(255, 42, 0);
     display: grid;
     grid-template-columns: 200px auto 100px auto;
     column-gap: 10px;
-   grid-gap: 20px;
-    
+    grid-gap: 20px;
+
     height: 500px;
-   
+
 }
-.box{
+
+.box {
 
     border: 2px solid rgb(4, 59, 117);
+}
+
+.calender {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+
+}
+
+.date,
+.day {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    font-size: 1.5em;
+    background-color: aquamarine;
+    border-radius: 5px;
+}
+
+.date:hover {
+    background-color: blueviolet;
+}
+
+.day {
+
+    height: 25px;
+    background-color: blueviolet;
+    color: #fffefe;
+}
+.con{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  
+}
+.food{
+    background-color: aqua;
+   
+    
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid green;
+}
+@media screen and (max-width:576px) {
+    .con{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (min-width:577px) and (max-width:992px)  {
+    .con{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
